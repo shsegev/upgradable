@@ -11,6 +11,7 @@ docker run --restart always --privileged --network host -d   \
      --name upservice upservice:latest
 docker build --no-cache -t upservice:1.11 .
 docker save -o upservice.tar upservice:1.11
+docker rmi upservice:1.11
 docker logs -f upservice &
 curl -X 'POST' \
   'http://127.0.0.1:8000/upload_new' \
