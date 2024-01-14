@@ -18,7 +18,6 @@ allflow.sh is the main script for testing the flow:
   - tag it as latest
   - send sigterm
 - onshutdown.sh will:
-  - wait for 5 seconds
   - rename the old docker
   - set disable autorestart for old docker
   - start the new docker
